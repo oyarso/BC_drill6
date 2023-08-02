@@ -33,16 +33,18 @@ export default {
   },
   methods: {
     enlazar(juegow) {
-      this.$router.push(`/opiniones/${juegow.id}`);
-
+      this.$router.push(`/opiniones/${juegow.id}`)
+        .catch();
     },
+
     obtener_juego() {
-      //  axios.get(`https://fakestoreapi.com/products/`)
-      axios.get("https://api.rawg.io/api/games?key=842a8d69a5b14a78b5e75d475fdfa631&dates=2019-09-01,2019-09-30&platforms=18,1,7")
+      // axios.get(`https://fakestoreapi.com/products/`)
+        axios.get("https://api.rawg.io/api/games?key=842a8d69a5b14a78b5e75d475fdfa631&dates=2019-09-01,2019-09-30&platforms=18,1,7")
 
         .then((res) => {
           this.juego = res.data.results;
-          // this.juego=res.data;
+
+          // this.juego = res.data;
         })
         .catch((error) => {
           console.log(error);

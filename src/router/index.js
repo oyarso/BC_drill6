@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFoundComponent from '@/components/NotFoundComponent.vue';
-
+import OpinionesView from '@/views/OpinionesView.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,8 +14,7 @@ const routes = [
   {
     path: "/opiniones/:title",
     name: "opiniones",
-    component: () =>
-      import(/* webpackChunkName: "opiniones" */ "../views/OpinionesView.vue"),
+    component: OpinionesView
   },
 {
   path: '/:catchAll(.*)',
