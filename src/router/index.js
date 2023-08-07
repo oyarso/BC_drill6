@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFoundComponent from '@/components/NotFoundComponent.vue';
 import OpinionesView from '@/views/OpinionesView.vue';
+import CuentaView from '@/views/CuentaView.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
     path: "/opiniones/:id",
     name: "opiniones",
     component: OpinionesView
+  },
+  {
+    path: "/cuenta/:id",
+    name: "cuenta",
+    component: CuentaView
   },
 {
   path: '/:catchAll(.*)',

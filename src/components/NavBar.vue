@@ -13,7 +13,7 @@
             </li>
 
             <li class="nav-item ">
-              <router-link class="nav-link active text-end text-light " aria-current="page" to="/">Home</router-link>
+              <router-link class="nav-link active text-end text-light " aria-current="page" to="/cuenta">Cuenta</router-link>
             </li>
 
           </ul>
