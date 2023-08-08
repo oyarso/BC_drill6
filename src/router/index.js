@@ -12,20 +12,28 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+
+  
   {
-    path: "/opiniones/:id",
-    name: "opiniones",
-    component: OpinionesView
+    path: '/opiniones/:id', 
+    name: 'opiniones',
+    component: OpinionesView,
+    props: true
   },
+  
+
+  
+
   {
     path: "/cuenta/:id",
     name: "cuenta",
-    component: CuentaView
+    component: CuentaView,
+    props: true
   },
 {
   path: '/:catchAll(.*)',
   name: 'notfound',
-  component: NotFoundComponent
+  component: NotFoundComponent,
 },
 ]
 

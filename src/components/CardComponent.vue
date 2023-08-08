@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-4" v-for="(juegow, indice) in juego" :key="indice">
+      <div class="col-md-4" v-for="juegow in juegos" :key="juegow.id">
         <div class="card" style="width: 18rem;">
 
           <img :src="juegow.background_image" class="card-img-center" />
@@ -32,10 +32,11 @@
 <script>
 import axios from 'axios';
 export default {
+  props: ['title'],
   name: "CardComponent",
   data() {
     return {
-      juego: [],
+      juegos: [],
     };
   },
   methods: {
@@ -53,14 +54,15 @@ export default {
         axios.get("https://api.rawg.io/api/games?key=842a8d69a5b14a78b5e75d475fdfa631&dates=2019-09-01,2019-09-30&platforms=18,1,7")
 
         .then((res) => {
-          this.juego = res.data.results;
+          this.juegos = res.data.results;
 
-          // this.juego = res.data;
+          // this.juegos = res.data;
         })
         .catch((error) => {
           console.log(error);
         });
     },
+
 
 
 

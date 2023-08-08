@@ -11,11 +11,6 @@
             <li class="nav-item">
               <router-link class="nav-link active text-light" aria-current="page" to="/">Games opinion</router-link>
             </li>
-
-            <li class="nav-item ">
-              <router-link class="nav-link active text-end text-light " aria-current="page" to="/cuenta">Cuenta</router-link>
-            </li>
-
           </ul>
 
         </div>
