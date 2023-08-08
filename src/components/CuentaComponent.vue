@@ -7,9 +7,6 @@
     <div v-if="name != '' && last_name != ''">
 
 
-    </div>
-
-
 
 <br><br>
 
@@ -43,7 +40,7 @@
 </div>
 
     
-    <div class="container text-center sticky-bottom">
+    <div id="kanva" class="container text-center sticky-bottom">
   <div class="row">
     <div class="col bg-warning">
       % de finalización de juego
@@ -68,7 +65,7 @@
     <div class="offcanvas offcanvas-start bg-dark text-light" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
       aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header bg-dark text-light">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Menú</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -79,6 +76,9 @@
       </div>
     </div>
   </div>
+
+
+</div>
   
 </template>    
 <script>

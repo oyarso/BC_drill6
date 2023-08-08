@@ -17,7 +17,7 @@
 
             
             <a href="#" @click=enlazar(juegow) class="btn btn-primary mx-2">Opinar</a>
-            <a href="#" @click=enlazarLike(juegow) class="btn btn-danger">Like</a>
+            <a href="#" @click=enlazarLike(juegow) class="btn btn-danger"><i class="fa-solid fa-heart"></i></a>
               
               
 
